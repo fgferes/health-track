@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <title>Health Track - Nova Medida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/cssLocal.css">
+</head>
+
+<body>
+<div class="wrapper vertical-center">
+  <div class="container">
+    <div class="titulo">
+      <h1 class=text-center>Health Track</h1>
+<!--      <p class=text-center>Nova Medida</p> -->
+    </div>
+    <form action="dashboard.html">
+      <div class="form-group input-group">
+      	<label>Tipo da medida:</label>
+      	<select class="form-control">
+      	  <option selected>Selecione uma Opção</option>
+      	  <option value="1">Peso (Massa)</option>
+      	  <option value="2">Altura</option>
+      	  <option value="3">Temperatura</option>
+      	</select>
+      </div>
+
+      <div class="form-group row">
+      	<label class="col-2 col-form-label">Data-Hora:</label>
+      	<div class="col-4">
+      		<input class="form-control" type="datetime-local" value="2020-06-09T13:45:00" id="datetime-medida">
+      	</div>
+      	<label class="col-2 col-form-label">Valor:</label>
+      	<div class="col-4">
+      		<input class="form-control" type="number" value="100" id="valor-medida">
+      	</div>
+      </div>
+
+      <div class="text-center">
+      <button type="submit" class="btn btn-primary">
+        Adicionar Medida
+      </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
